@@ -14,3 +14,10 @@ sequenceDiagram
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
 ```
+```mermaid
+            graph TD 
+            A[Client] -->|tcp_123| B
+            B(Load Balancer) 
+            B -->|tcp_456| C[Server1] 
+            B -->|tcp_456| D[Server2]
+```
